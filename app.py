@@ -64,6 +64,6 @@ if row:
             """, (updated_val, id_input))
             conn.commit()
 
-            st.success("Value updated successfully")
-           st.rerun()
+           st.success("Value updated successfully")
+st.rerun()
 
