@@ -65,4 +65,5 @@ if row:
             conn.commit()
 
             st.success("Value updated successfully")
-            st.experimental_rerun()
+           st.rerun()
+
