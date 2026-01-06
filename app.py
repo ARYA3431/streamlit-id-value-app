@@ -2,7 +2,6 @@ import streamlit as st
 import sqlite3
 
 # ---------------- DATABASE ----------------
-# /tmp is required for Streamlit Cloud
 conn = sqlite3.connect("/tmp/master.db", check_same_thread=False)
 cur = conn.cursor()
 
@@ -15,7 +14,6 @@ CREATE TABLE IF NOT EXISTS master (
 """)
 conn.commit()
 
-# Default initialization (only once)
 defaults = {
     1:'A', 2:'B', 3:'C', 4:'D', 5:'E',
     6:'F', 7:'G', 8:'H', 9:'I'
