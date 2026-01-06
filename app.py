@@ -65,5 +65,5 @@ if row:
             conn.commit()
 
            st.success("Value updated successfully")
-st.rerun()
+           st.rerun()
 
